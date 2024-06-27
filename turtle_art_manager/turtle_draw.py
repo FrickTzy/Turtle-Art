@@ -22,13 +22,13 @@ class TurtleDraw:
             stroke_size (int, optional): The thickness of the drawing pen. Defaults to 5.
             color (str, optional): The color of the drawing pen. Defaults to "black".
         """
-        self.pen = pen
-        self.screen = screen
-        self.stroke_size = stroke_size
-        self.color = color
+        self._pen = pen
+        self._screen = screen
+        self._stroke_size = stroke_size
+        self._color = color
 
     def _set_pen_stroke(self) -> None:
         """
         Set the stroke size of the drawing pen.
         """
-        self.pen.pensize(self.stroke_size)
+        self._pen.pensize(self._stroke_size)

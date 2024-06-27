@@ -21,8 +21,8 @@ class Rectangle(TurtleArt):
             **kwargs: Additional keyword arguments passed to the superclass constructor (TurtleArt).
         """
         super().__init__(*args, **kwargs)
-        self.width = width
-        self.height = height
+        self._width = width
+        self._height = height
 
     def _draw_art(self) -> None:
         """
@@ -30,7 +30,7 @@ class Rectangle(TurtleArt):
         """
         self._go_to_position()
         for _ in range(2):
-            self.pen.forward(self.width)
-            self.pen.right(90)
-            self.pen.forward(self.height)
-            self.pen.right(90)
+            self._pen.forward(self._width)
+            self._pen.right(90)
+            self._pen.forward(self._height)
+            self._pen.right(90)

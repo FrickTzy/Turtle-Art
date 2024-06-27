@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '1.0'
+VERSION = '1.3'
 DESCRIPTION = 'A package for making turtle art'
 
 with open("README.md", "r") as file:
@@ -9,7 +9,7 @@ with open("README.md", "r") as file:
 URL = 'https://github.com/FrickTzy/Turtle-Art'
 
 setup(
-    name="turtle_art",
+    name="turtle_art_manager",
     version=VERSION,
     author="FrickTzy (Kurt Arnoco)",
     description=DESCRIPTION,

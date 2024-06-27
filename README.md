@@ -1,13 +1,13 @@
-# Turtle-Art
+# Turtle-Art-Manager
 
-The Turtle-Art package provides Python classes for creating artistic drawings using Turtle graphics.
+The Turtle-Art-Manager package provides Python classes for creating artistic drawings using Turtle graphics.
 
 ## Installation
 
 You can install the Turtle-Art package using pip:
 
 ```bash
-pip install turtle-art
+pip install turtle-art-manager
 ```
 
 ## Classes
@@ -20,12 +20,14 @@ The `TurtleArt` class serves as an abstract base class for creating various arti
 
 ```python
 from turtle import Screen, Turtle
-from turtle_art import TurtleArt
+from turtle_art_manager import TurtleArt
+
 
 class MyArt(TurtleArt):
     def _draw_art(self) -> None:
         pass
-    
+
+
 # Example usage:
 screen = Screen()
 pen = Turtle()
@@ -46,7 +48,7 @@ The `Rectangle` class is a subclass of `TurtleArt` that allows you to draw recta
 
 ```python
 from turtle import Screen, Turtle
-from turtle_art import Rectangle
+from turtle_art_manager import Rectangle
 
 # Example usage:
 screen = Screen()
@@ -64,7 +66,7 @@ The `Circle` class is another subclass of `TurtleArt` that allows you to draw ci
 
 ```python
 from turtle import Screen, Turtle
-from turtle_art import Circle
+from turtle_art_manager import Circle
 
 # Example usage:
 screen = Screen()

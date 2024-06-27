@@ -26,11 +26,11 @@ class Circle(TurtleArt):
         """
         super().__init__(screen=screen, pen=pen, position=position, color=color, stroke_size=stroke_size,
                          fill_color=fill_color)
-        self.radius = radius
+        self._radius = radius
 
     def _draw_art(self) -> None:
         """
         Draw the circle on the screen.
         """
         self._go_to_position()
-        self.pen.circle(self.radius)
+        self._pen.circle(self._radius)
