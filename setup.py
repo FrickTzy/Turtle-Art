@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '1.4'
+VERSION = '1.5'
 DESCRIPTION = 'A package for making turtle art'
 
 with open("README.md", "r") as file:
